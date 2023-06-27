@@ -15,8 +15,7 @@
 </head>
 
 <body class="{{body_class}}">
-  <div class="bg-white-bg">
-
+  <div class="bg-white-bg select-none">
     <header>
       <nav class="bg-white-nav px-4 lg:px-6">
         <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
@@ -65,7 +64,7 @@
         <div class="flex flex-col items-end">
           <ul class="text-gray-500 inline-flex gap-4">
             <li>
-              <a href="#">
+              <a href="https://www.instagram.com/centroterapeuticomaranata/" target="_blank" title="Visite nosso Instagram" aria-label="Visite nosso Instagram">
                 <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" viewBox="0 0 24 24" fill="none"
                   stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                   <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
@@ -78,7 +77,7 @@
         </div>
       </div>
       <div class="container px-5 py-6 mx-auto flex items-center sm:flex-row flex-col">
-        <p>Copyright © Lorem Ipsum, 2023. All rights reserved.</p>
+        <p>Copyright © {{@site.title}}, {{date format="YYYY"}}. Todos os direitos reservados.</p>
       </div>
   </div>
   </footer>
