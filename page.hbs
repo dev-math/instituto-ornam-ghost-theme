@@ -1,28 +1,28 @@
 {{!< default}}
 
-{{#post}}
-<article class="gh-article {{post_class}}">
+<div class="container mx-auto p-4">
+  <div class="flex flex-col items-center">
 
-    <header class="gh-header gh-canvas">
-        <h1 class="gh-title">{{title}}</h1>
+    {{#post}}
+      <article class="{{post_class}} w-full sm:max-w-5xl py-4">
 
-        {{#if custom_excerpt}}
-            <p class="gh-excerpt">{{custom_excerpt}}</p>
-        {{/if}}
+        <header class="text-center">
+          <h1 class="text-3xl font-bold py-4">{{title}}</h1>
 
-        {{#if feature_image}}
-            <figure class="gh-feature-image">
-                <img src="{{feature_image}}" alt="{{#if feature_image_alt}}{{feature_image_alt}}{{else}}{{title}}{{/if}}" />
-                {{#if feature_image_caption}}
-                    <figcaption>{{feature_image_caption}}</figcaption>
-                {{/if}}
-            </figure>
-        {{/if}}
-    </header>
+          {{#if custom_excerpt}}
+            <p class="bt-content py-2">{{custom_excerpt}}</p>
+          {{/if}}
 
-    <div class="gh-content gh-canvas">
-        {{content}}
-    </div>
+          {{#if feature_image}}
+            <img src="{{feature_image}}" alt="{{title}}" />
+          {{/if}}
+        </header>
 
-</article>
-{{/post}}
+        <div>
+          {{content}}
+        </div>
+
+      </article>
+    {{/post}}
+  </div>
+</div>
