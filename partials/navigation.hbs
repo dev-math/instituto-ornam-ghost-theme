@@ -22,7 +22,7 @@
   </button>
 </div>
 {{else}}
-<ul role="menu">
+<ul class="flex gap-10" role="menu">
   {{#foreach navigation}}
   <li role="menuitem">
     <a href="{{url absolute=" true"}}" {{#if current}}aria-current="page" {{/if}}>{{label}}</a>
