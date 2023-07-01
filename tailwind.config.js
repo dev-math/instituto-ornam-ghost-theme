@@ -37,6 +37,10 @@ module.exports = {
         500: "#343A40",
       },
     },
+    variants: {
+      extend: {},
+      responsive: ['responsive'],
+    },
     fontFamily: {
       sans: ["Rubik", "sans-serif"],
     },
